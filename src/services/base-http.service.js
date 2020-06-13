@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 export default class BaseHttpService {
-  BASE_URL = 'http://localhost:3000';
+  BASE_URL = 'http://localhost:3000' || 'instance of backend in aws';
   _accessToken = null;
 
   constructor(routerStore) {
